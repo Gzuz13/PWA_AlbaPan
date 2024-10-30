@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ffd700;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.header-actions .icon {
+    height: 35px;
+    margin: 0 10px;
+}
+
+.pickup-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito {
+    width: 60%; /* Aumenta el tamaño del carrito */
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 30px; /* Espaciado más grande */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.carrito h1 {
+    font-size: 28px;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #333;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; /* Más espacio entre productos */
+    border-bottom: 1px solid #ddd;
+}
+
+.producto-info {
+    position: relative; /* Asegura que todos los elementos mantengan su flujo en la página */
+    padding-top: 10px;  /* Puedes ajustar este valor si necesitas más espacio */
+    margin-right: 150px;
+}
+
+.producto-imagen {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    margin-right: 10px;
+}
+
+.producto-detalles p {
+    margin: 0;
+}
+
+.producto-cantidad {
+    display: flex;
+    flex-direction: column; /* Hace que los elementos se apilen verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-right: 80px;
+    margin-bottom: 5px;   /* Espacio entre el título y el contenido debajo */
+}
+
+.cantidad-controles {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre los botones de cantidad y el botón eliminar */
+}
+
+.cantidad-btn {
+    background-color: #ffd700; /* Color de los botones más amarillo */
+    border: none;
+    padding: 8px 12px; /* Botones más grandes */
+    cursor: pointer;
+    font-size: 20px; /* Fuente más grande */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #333;
+}
+
+.cantidad-btn:hover {
+    background-color: #e6b800;
+}
+
+.producto-cantidad span {
+    margin: 0 15px;
+    font-size: 20px; /* Tamaño de la cantidad más grande */
+}
+
+.eliminar {
+    color: #ff0000;
+    text-decoration: none;
+    margin-top: 5px; /* Añadir espacio superior si es necesario */
+    font-size: 14px; /* Ajustar el tamaño de fuente si es necesario */
+}
+
+.producto-total{
+    margin-bottom: 55px;   /* Espacio entre el título y el contenido debajo */
+}
+
+.producto-total p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Botón para seguir comprando */
+.seguir-comprando {
+    background-color: #ffd700; 
+    border: none;
+    padding: 15px 30px; /* Botón más grande */
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 30px; /* Más espacio superior */
+    border-radius: 8px;
+}
+
+.seguir-comprando:hover {
+    background-color: #e6b800;
+}
+
+/* Contenedor del carrito y resumen */
+.contenedor {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+
+.resumen {
+    width: 280px;
+    margin-left: 40px; /* Más espacio entre el carrito y el resumen */
+    margin-top: 20px;
+    padding: 30px; /* Más relleno interno */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.resumen p {
+    margin: 0;
+    font-size: 15px; /* Texto más grande */
+    font-weight: bold;
+}
+
+.resumen .sucursal p {
+    margin: 8px 0;
+    line-height: 1.6; /* Más separación entre líneas */
+}
+
+/* Botón de ir a pagar */
+.ir-pagar {
+    background-color: #ffd700; 
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.ir-pagar:hover {
+    background-color: #e6b800;
+}
+
+.ir-pagar:focus {
+    outline: none;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.producto-titulo {
+    font-size: 18px;       /* Tamaño del título */
+    font-weight: bold;     /* Negrita para destacarlo */
+    margin-bottom: 15px;   /* Espacio entre el título y el contenido debajo */
+    color: #333;           /* Color del texto */
+    text-align: left;      /* Alineación del texto hacia la izquierda */
+}
+
+.linea-divisoria {
+    border: none; /* Elimina el borde predeterminado */
+    height: 2px; /* Altura de la línea */
+    background-color: #ddff01; /* Color de la línea */
+    margin: 20px 0; /* Espacio superior e inferior */
+}
+
