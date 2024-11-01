@@ -19,6 +19,8 @@ export default function Promociones()  {
 
   return (
 
+    
+
     <AuthenticatedLayout
     header={
       <h2 className="text-xl font-semibold leading-tight text-dark-800 dark:text-dark-200" style={{ margin: 0, textAlign: 'center' }}>
@@ -26,6 +28,29 @@ export default function Promociones()  {
     </h2>
     }
 >   
+
+<head>
+<meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name="theme-color" content="#ffd700"/>
+            <meta name="robots" content="index, follow"/>
+
+
+            <meta name="apple-mobile-web-app-capable" content="yes"/>
+            <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+            <meta name="apple-mobile-web-app-title" content="AlbaPan"/>
+
+
+            <link rel="icon" href="/favicon.ico" sizes="any"/>
+            <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"/>
+            <link rel="icon" sizes="192x192" href="/icons/ALBAPAN-192X192.png"/>
+
+
+            <meta property="og:title" content="AlbaPan"/>
+            <meta property="og:description" content="Panadería, Pan, Pasteles, Pan Fresco, AlbaPan, Productos de Panadería, Panadería en Línea, Pedidos de Pan, PWA panadería"/>
+            <meta property="og:image" content="/images/ALBAPAN.png"/>
+            <meta property="og:url" content="https://www.facebook.com/profile.php?id=100071772542007&mibextid=JRoKGix"/>
+</head>
 
       <body>
       <div>
