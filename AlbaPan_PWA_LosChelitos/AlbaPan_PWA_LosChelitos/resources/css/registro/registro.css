@@ -1,0 +1,131 @@
+/* Estilo general del formulario */
+form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 200px auto 0; /* Margen superior de 40px, centrado en la página */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del formulario */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #f9f9f9; /* Color de fondo */
+}
+
+/* Estilo para las etiquetas de entrada */
+.input-label {
+    display: block; /* Mostrar como bloque */
+    margin-bottom: 8px; /* Espaciado inferior */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilo para los campos de entrada */
+.input-field {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 16px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    transition: border-color 0.3s; /* Transición suave al cambiar el color del borde */
+}
+
+/* Estilo al enfocar el campo de entrada */
+.input-field:focus {
+    border-color: #007bff; /* Color del borde al enfocar */
+    outline: none; /* Sin contorno adicional */
+}
+
+/* Estilo para los mensajes de error */
+.error-message {
+    color: #ff4d4d; /* Color rojo para el mensaje de error */
+    font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+    margin-top: -12px; /* Mover hacia arriba */
+    margin-bottom: 12px; /* Espaciado inferior */
+}
+
+/* Estilo para el enlace */
+.link {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.link:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilo para el botón de envío */
+.submit-button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    /* Sombra al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+/*Barra*/
+
+.header {
+    background-color: #ffd700;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Añade padding lateral */
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.header-actions {
+    font-family: 'Brush Script MT', cursive;
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Añade espacio entre .header-actions y otros elementos */
+}
+
+.header-actions .icon {
+    height: 35px;
+    margin: 0 10px;
+}
+
+.header-actions a {
+    margin-left: 15px; /* Ajusta la separación entre los enlaces dentro de .header-actions */
+    font-size: 30px; /* Ajusta el tamaño de los enlaces si es necesario */
+    color: black;
+    text-decoration: none;
+}
+
+.header-actions a:hover {
+    text-decoration: underline;
+}

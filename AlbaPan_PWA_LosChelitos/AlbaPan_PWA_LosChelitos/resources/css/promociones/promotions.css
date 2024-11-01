@@ -1,0 +1,26 @@
+.mainP {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.promotionP {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.promotion img {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+}
+
+.promotion button P {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
