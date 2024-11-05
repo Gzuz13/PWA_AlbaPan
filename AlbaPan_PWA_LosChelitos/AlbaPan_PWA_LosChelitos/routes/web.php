@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -20,11 +21,18 @@ Route::get('/', function () {
     ]);
 });
 
+
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+
+    Route::get('/vistaA', function () {
+        return Inertia::render('VistaA'); // Asegúrate de que el nombre coincida con tu componente
+    })->name('vistaA');
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -32,7 +40,10 @@ Route::middleware('auth')->group(function () {
     Route::resource('user', UserController::class);
     Route::resource('task', TaskController::class);
     Route::resource('project', ProjectController::class);
+
+
 });
+
 
 Route::get('/conocenos', function () {
     return Inertia::render('Conocenos');
@@ -49,8 +60,6 @@ Route::get('/promociones', function () {
 Route::get('/carrito', function () {
     return Inertia::render('Carrito');
 })->middleware(['auth', 'verified'])->name('carrito');
-
-
 
 
 require __DIR__.'/auth.php';
