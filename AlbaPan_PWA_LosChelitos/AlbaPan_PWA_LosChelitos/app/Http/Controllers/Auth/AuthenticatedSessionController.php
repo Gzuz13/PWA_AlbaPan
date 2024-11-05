@@ -30,12 +30,20 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request): RedirectResponse
     {
         $request->authenticate();
-
+    
         $request->session()->regenerate();
-
+    
+        $user = Auth::user();
+    
+        // Verificar si el usuario es el específico para redirigir a 'vistaA'
+        if ($user->email === 'admin@email.com') {
+            return redirect()->route('vistaA'); // Redirige a la ruta 'vistaA'
+        }
+        
+        // Redirección normal para otros usuarios
         return redirect()->intended(route('dashboard', absolute: false));
     }
-
+    
     /**
      * Destroy an authenticated session.
      */
@@ -49,4 +57,7 @@ class AuthenticatedSessionController extends Controller
 
         return redirect('/');
     }
+
+    
+
 }
